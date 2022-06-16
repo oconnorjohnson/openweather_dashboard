@@ -21,5 +21,9 @@ WHEN I click on a city in the search history
 
 THEN I am again presented with current and future conditions for that city
 
+![Screen Shot 2022-06-16 at 4 32 53 PM](https://user-images.githubusercontent.com/100829940/174195210-9e06818b-2640-47ea-94a9-471f38f8b16d.png)
+
 ## DEPLOYED APPLICATION
 https://oconnorjohnson.github.io/openweather_dashboard/
+
+
