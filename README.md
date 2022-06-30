@@ -8,6 +8,7 @@ Enter a city into the search bar on the left side of the page to return location
 
 ## Deployed Application
 https://oconnorjohnson.github.io/openweather_dashboard/
+
 ![Screen Shot 2022-06-30 at 11 33 47 AM](https://user-images.githubusercontent.com/100829940/176752538-b85198ea-da6f-4272-9220-8725b1afb775.png)
 
 ## License 
