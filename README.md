@@ -1,29 +1,15 @@
-## ACCEPTANCE CRITERIA
-GIVEN a weather dashboard with form inputs 
+# Openweather-Dashboard
 
-WHEN I search for a city
+## Description 
+The Openweather-Dashboard is a web application that utilizes the Openweather API to provide a 5-day forecast including UV index and temperature for any city searched by the client. 
 
-THEN I am presented with current and future conditions for that city and that city is added to the search history
+## Usage
+Enter a city into the search bar on the left side of the page to return location-specific weather. As you search new locations, old locations will save below the search bar using local storage. 
 
-WHEN I view current weather conditions for that city
-
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-
-WHEN I view the UV index
-
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-
-WHEN I view future weather conditions for that city
-
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-
-WHEN I click on a city in the search history
-
-THEN I am again presented with current and future conditions for that city
-
-![Screen Shot 2022-06-16 at 4 32 53 PM](https://user-images.githubusercontent.com/100829940/174195210-9e06818b-2640-47ea-94a9-471f38f8b16d.png)
-
-## DEPLOYED APPLICATION
+## Deployed Application
 https://oconnorjohnson.github.io/openweather_dashboard/
+
+## License 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 
