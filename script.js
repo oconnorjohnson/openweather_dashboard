@@ -30,7 +30,8 @@ function loadWeatherZip(zipCpde, isClicked) {
         }).catch(function (response){
             alert("Not a vaild Zip Code")
         });
-}
+};
+
 function loadWeatherCity(city, isClicked) {
     var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + ",us&appid=" + APIKey;
     var weatherContainer = $("#weatherContainer");
@@ -49,9 +50,9 @@ function loadWeatherCity(city, isClicked) {
         }).catch(function(response){
             alert("Not a valid City");
         });
-}
-function showWeatherData(weatherData, city)
-{
+};
+
+function showWeatherData(weatherData, city) {
     var iconURL = "http://openweathermap.org/img/w/" + weatherData.current.weather[0].icon + ".png";  //get weather icon
     $("#cityDate").html(city + " (" + new Date().toLocaleDateString() + ") <img id=\"icon\" src=\"" + iconURL  + "\" alt=\"Weather icon\"/>");
     var temp = parseInt(weatherData.current.temp);
@@ -98,9 +99,9 @@ function showWeatherData(weatherData, city)
         ul5.append(div);
     }
     $("#weatherData").show();
-}
-function loadLocations()
-{
+};
+
+function loadLocations() {
     var locationsArray = localStorage.getItem("locations");
     if (locationsArray) 
     {
@@ -110,9 +111,9 @@ function loadLocations()
     else {
       localStorage.setItem("locations", JSON.stringify(locations));  
     }
-}
-function renderLocations()
-{
+};
+
+function renderLocations() {
     var divLocations = $("#locationHistory");
     divLocations.empty(); 
 
@@ -127,15 +128,13 @@ function renderLocations()
         var city = $(element).attr("data-city");
         loadWeatherCity(city, true);
     });
-}
-function saveLocations(data)
-{
+};
+
+function saveLocations(data) {
     var city = data.city.name; 
     locations.unshift(city);
     localStorage.setItem("locations", JSON.stringify(locations));  
-
-}
-$(document).ready(function () {
+} $(document).ready(function () {
     $("#weatherData").hide();  
     loadLocations();  
     $("#searchBtn").click(function (event) {  
